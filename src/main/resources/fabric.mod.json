@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "npe",
+	"version": "${version}",
+	"name": "NPE",
+	"description": "throw new NullPointerException();",
+	"authors": [
+		"Sevtinge"
+	],
+	"contact": {
+		"homepage": "https://github.com/Sevtinge/NPE",
+		"sources": "https://github.com/Sevtinge/NPE"
+	},
+	"license": "MIT",
+	"icon": "assets/npe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sevtinge.npe.NPE"
+		],
+		"client": [
+			"com.sevtinge.npe.NPEClient"
+		],
+		"fabric-datagen": [
+			"com.sevtinge.npe.datagenerator.NPEDataGenerator"
+		]
+	},
+	"mixins": [
+		"npe.mixins.json",
+		{
+			"config": "npe.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

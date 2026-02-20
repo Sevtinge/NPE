@@ -1,0 +1,26 @@
+{
+  "parent": "npe:get_null_pointer_exception",
+  "criteria": {
+    "used_null_pointer_exception": {
+      "trigger": "npe:release_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.npe.use_null_pointer_exception_desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "npe:null_pointer_exception"
+    },
+    "title": {
+      "translate": "advancement.npe.use_null_pointer_exception"
+    }
+  },
+  "requirements": [
+    [
+      "used_null_pointer_exception"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "got_null_pointer_exception": {
+      "conditions": {
+        "items": [
+          {
+            "items": "npe:null_pointer_exception"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.npe.get_null_pointer_exception_desc"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "npe:null_pointer_exception"
+    },
+    "title": {
+      "translate": "advancement.npe.get_null_pointer_exception"
+    }
+  },
+  "requirements": [
+    [
+      "got_null_pointer_exception"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

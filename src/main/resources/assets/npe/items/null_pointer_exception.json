@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "npe:item/null_pointer_exception"
+  }
+}

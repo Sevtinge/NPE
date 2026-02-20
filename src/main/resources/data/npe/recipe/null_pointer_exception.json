@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "minecraft:blaze_powder",
+    "B": "minecraft:sea_lantern",
+    "C": "minecraft:netherite_block",
+    "D": "minecraft:beacon",
+    "E": "minecraft:recovery_compass",
+    "F": "minecraft:end_crystal",
+    "G": "minecraft:stick",
+    "H": "minecraft:tnt",
+    "I": "minecraft:suspicious_stew"
+  },
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "npe:null_pointer_exception"
+  }
+}

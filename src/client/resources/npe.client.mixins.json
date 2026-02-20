@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.sevtinge.npe.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"NPEClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
