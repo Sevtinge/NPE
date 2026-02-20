@@ -38,7 +38,7 @@ public class NPEAdvancements implements Consumer<Consumer<AdvancementHolder>> {
                         true, // Announce it to chat
                         false // Hide it in the advancement tab until it's achieved
                 )
-                // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
+                // "got_null_pointer_exception" is the name referenced by other advancements when they want to have "requirements."
                 .addCriterion("got_null_pointer_exception", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.NULL_POINTER_EXCEPTION))
                 // Give the advancement an id
                 .save(consumer, NPE.MOD_ID + ":get_null_pointer_exception");
@@ -56,9 +56,7 @@ public class NPEAdvancements implements Consumer<Consumer<AdvancementHolder>> {
                         true,
                         false
                 )
-                // "got_dirt" is the name referenced by other advancements when they want to have "requirements."
                 .addCriterion("used_null_pointer_exception", ModCriteria.RELEASE_ITEM.createCriterion(new ReleaseItemCriterion.Conditions(Optional.empty())))
-                // Give the advancement an id
                 .save(consumer, NPE.MOD_ID + ":use_null_pointer_exception");
     }
 }
