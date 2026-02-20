@@ -21,7 +21,7 @@ public final class ModItems {
 
     public static final ToolMaterial EXCEPTION_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_WOODEN_TOOL,
-            500, 2f, 12f, 22,
+            2048, 2f, 12f, 22,
             NPEArmorMaterial.REPAIRS_NPE_ARMOR
     );
 
