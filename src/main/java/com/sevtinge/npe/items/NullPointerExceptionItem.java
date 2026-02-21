@@ -1,6 +1,7 @@
-package com.sevtinge.npe.utils;
+package com.sevtinge.npe.items;
 
 import com.sevtinge.npe.criterion.ModCriteria;
+import com.sevtinge.npe.utils.NPEArmorMaterial;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;

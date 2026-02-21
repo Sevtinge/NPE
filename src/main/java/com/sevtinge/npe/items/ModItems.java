@@ -1,14 +1,12 @@
-package com.sevtinge.npe;
+package com.sevtinge.npe.items;
 
-import com.sevtinge.npe.utils.NullPointerExceptionItem;
-import com.sevtinge.npe.utils.NPEArmorMaterial;
+import com.sevtinge.npe.NPE;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;

@@ -1,6 +1,6 @@
-package com.sevtinge.npe.datagenerator;
+package com.sevtinge.npe.datagenerator.provider.advancement;
 
-import com.sevtinge.npe.ModItems;
+import com.sevtinge.npe.items.ModItems;
 import com.sevtinge.npe.NPE;
 import com.sevtinge.npe.criterion.ModCriteria;
 import com.sevtinge.npe.criterion.ReleaseItemCriterion;

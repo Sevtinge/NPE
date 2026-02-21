@@ -1,6 +1,7 @@
 package com.sevtinge.npe;
 
 import com.sevtinge.npe.criterion.ModCriteria;
+import com.sevtinge.npe.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
