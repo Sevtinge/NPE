@@ -3,16 +3,30 @@ package com.sevtinge.npe.utils;
 import com.sevtinge.npe.criterion.ModCriteria;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TridentItem;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 
 public class NullPointerExceptionItem extends TridentItem {
 
     public NullPointerExceptionItem(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public InteractionResult use(Level level, Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+        if (EnchantmentHelper.getTridentSpinAttackStrength(itemstack, player) > 0.0F && !player.isInWaterOrRain()) {
+            return InteractionResult.FAIL;
+        } else {
+            player.startUsingItem(hand);
+            return InteractionResult.CONSUME;
+        }
     }
 
     @Override
