@@ -2,15 +2,33 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": "minecraft:blaze_powder",
-    "B": "minecraft:sea_lantern",
-    "C": "minecraft:netherite_block",
-    "D": "minecraft:beacon",
-    "E": "minecraft:recovery_compass",
-    "F": "minecraft:end_crystal",
-    "G": "minecraft:stick",
-    "H": "minecraft:tnt",
-    "I": "minecraft:suspicious_stew"
+    "A": {
+      "item": "minecraft:blaze_powder"
+    },
+    "B": {
+      "item": "minecraft:sea_lantern"
+    },
+    "C": {
+      "item": "minecraft:netherite_block"
+    },
+    "D": {
+      "item": "minecraft:beacon"
+    },
+    "E": {
+      "item": "minecraft:recovery_compass"
+    },
+    "F": {
+      "item": "minecraft:end_crystal"
+    },
+    "G": {
+      "item": "minecraft:stick"
+    },
+    "H": {
+      "item": "minecraft:tnt"
+    },
+    "I": {
+      "item": "minecraft:suspicious_stew"
+    }
   },
   "pattern": [
     "ABC",
