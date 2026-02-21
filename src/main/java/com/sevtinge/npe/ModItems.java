@@ -20,15 +20,18 @@ public final class ModItems {
     private ModItems() {}
 
     public static final ToolMaterial EXCEPTION_MATERIAL = new ToolMaterial(
-            BlockTags.INCORRECT_FOR_WOODEN_TOOL,
-            2048, 2f, 12f, 22,
-            NPEArmorMaterial.REPAIRS_NPE_ARMOR
+            NullPointerExceptionItem.INCORRECT_BLOCKS_FOR_DROPS,
+            NullPointerExceptionItem.DURABILITY,
+            NullPointerExceptionItem.SPEED,
+            NullPointerExceptionItem.ATTACK_DAMAGE_BONUS,
+            NullPointerExceptionItem.ENCHANTMENT_VALUE,
+            NullPointerExceptionItem.REPAIR_ITEMS
     );
 
     public static final Item NULL_POINTER_EXCEPTION = register(
             "null_pointer_exception",
             NullPointerExceptionItem::new,
-            new NullPointerExceptionItem.Properties().sword(EXCEPTION_MATERIAL, 1f, -2.8f).rarity(Rarity.EPIC));
+            new NullPointerExceptionItem.Properties().sword(EXCEPTION_MATERIAL, 0f, NullPointerExceptionItem.ATTACK_SPEED).rarity(Rarity.EPIC));
 
     public static <GenericItem extends Item> GenericItem register(String name, Function<Item.Properties, GenericItem> itemFactory, Item.Properties settings) {
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(NPE.MOD_ID, name));
