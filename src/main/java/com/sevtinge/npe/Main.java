@@ -76,9 +76,12 @@ public class Main {
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));*/
 
     public static final Tier EXCEPTION_MATERIAL = new SimpleTier(
-            BlockTags.INCORRECT_FOR_WOODEN_TOOL,
-            2048, 2f, 12f, 22,
-            () -> Ingredient.of(NPEArmorMaterial.REPAIRS_NPE_ARMOR)
+            NullPointerExceptionItem.INCORRECT_BLOCKS_FOR_DROPS,
+            NullPointerExceptionItem.DURABILITY,
+            NullPointerExceptionItem.SPEED,
+            NullPointerExceptionItem.ATTACK_DAMAGE_BONUS,
+            NullPointerExceptionItem.ENCHANTMENT_VALUE,
+            () -> Ingredient.of(NullPointerExceptionItem.REPAIR_ITEMS)
     );
 
     public static final Supplier<NullPointerExceptionItem> NULL_POINTER_EXCEPTION = ITEMS.register(
@@ -86,7 +89,7 @@ public class Main {
             () -> new NullPointerExceptionItem(
                     new Item.Properties().attributes(
                             SwordItem.createAttributes(
-                                    EXCEPTION_MATERIAL, 1f, -2.8f
+                                    EXCEPTION_MATERIAL, 0f, NullPointerExceptionItem.ATTACK_SPEED
                             )
                     ).rarity(Rarity.EPIC).stacksTo(1)
             )
